@@ -1,6 +1,6 @@
-import app from "./app";
+import app from './app';
 
-const port = normalizaPort(process.env.PORT || "3333");
+const port = normalizaPort(process.env.PORT || '3333');
 
 function normalizaPort(val) {
   const port = parseInt(val, 10);
@@ -12,6 +12,6 @@ function normalizaPort(val) {
   }
   return false;
 }
-app.listen(port, function() {
+app.listen(port, () => {
   console.log(`app listening on http://localhost:${port}`);
 });
